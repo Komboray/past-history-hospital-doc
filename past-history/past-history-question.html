@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Past History Questionnaire</title>
+    <link rel="stylesheet" href="past.css">
+</head>
+<body>
+   <form action="pastHistory.php" method="post">
+        <div >
+            <h2 class ="heading">Department</h2>
+            <h1 class ="heading">PATIENT HISTORY QUESTIONNAIRE</h1>
+            <hr>
+            <h2>A</h2>
+            <ol>
+                <li>Marital Status: <input type="checkbox" name="marital-status" id="" value="single"><label for="single">single</label> <input type="checkbox" name="marital-status" id="" value="married"><label for="married">married</label> <input type="checkbox" name="marital-status" id="" value="long-term-relationship"> <label for="long-term-relationship">long-term-relationship</label><input type="checkbox" name="marital-status" id="" value="divorced"> <label for="">Divorced</label><input type="checkbox" name="marital-status" id="" value="widowed"><label for="">Widowed</label></li>
+                <li>Reasons for the visit: <input type="text" name="reason-for-visit" id=""></li>
+                <li>Refering Physician: <select name="ref-physician" id="">
+                    <option value="Dr.Schola">Dr.Schola</option>
+                </select></li>
+
+                <li>Occupation: <input type="text" name="occupation" id=""></li>
+                <li>Preferred phone number: <input type="number" name="phone-no" id=""></li> 
+                <li>Partner: <input type="text" name="partner-name" id="partner" placeholder="Enter Partner's Name"> <input type="checkbox" name="partner-none" id="partner-none" > <label for="partner-none">None</label> <input type="number" name="age-partner" placeholder="Enter Age of partner"></li>
+                <li>Partner's Occupation: <input type="text" name="part-occupation" id=""></li>
+            </ol>
+
+            <hr>
+            <h2>B</h2><h2>MENSTRUAL HISTORY(complete even if post-menopausal or no longer having periods)</h2>
+            <ol>
+                <li>Age at first period: <input type="number" name="age-first-period"> years.</li>
+                <li> If your menstrual periods are regular; periods start every: <input type="number" name="period-start-days" id="period-days"> days</li>
+                <li>lf your menstrual periods are irregular; periods start every: <input type="number" name="irreg-period-strt-dy" id="irreg-period-dy" placeholder="eneter in form of 10-20"> days</li>
+                <li>Duration of bleeding: <input type="number" name="duration-bleeding" id="duration-bleeding" placeholder="in days"></li>
+                <li>Does bleeding or spotting occur between periods? <input type="checkbox" name="bleeding-btwn-periods" id="" value="no"> <label for="">No</label> <input type="checkbox" name="bleeding-btwn-periods" id="" value="yes"> <label for="">Yes</label></li>
+                <li>Does bleeding or spotting occur after intercourse? <input type="checkbox" name="bleeding-after-periods" id="" value="no"> <label for="">No</label> <input type="checkbox" name="bleeding-after-periods" id="" value="yes"> <label for="">Yes</label></li>
+                <li>First day of last menstrual period <input type="date" name="last-menstrual-period" id=""></li>
+                <li>Is pain associated with periods? <input type="checkbox" name="pain-period" id="" value="no"> <label for="">No</label> <input type="checkbox" name="pain-period" id="" value="yes"> <label for="">Yes</label> <input type="checkbox" name="" id=""> <label for="">Occasionally</label></li>
+                <li>If yes to 14, is it: before menses? <input type="checkbox" name="menses" id="" value="before-menses"> during menses? <input type="checkbox" name="menses" id="" value="during-menses"> both? <input type="checkbox" name="" id=""></li>
+            </ol>
+
+            <hr>
+            <h2>C</h2><h2>PREGNANCY HISTORY(All pregnancies)</h2>  <h2>Have never been pregnant <input type="checkbox" name="never-been-preg" id=""></h2>
+            <h3>OBSTETRICAL HISTORY INCLUDING ABORTIONS & ECTOPIC (TUBAL) PREGNANCIES</h3>
+            <table border="1" style = "background-color:black">
+                <thead>
+                    <tr align= "center" style = "background-color:lightblue">
+                        <th width="100">Year</td>
+                        <th width="100">Place of delivery or abortion</td>
+                        <th width="100">Duration Preg</td>
+                        <th width="100">Hrs. of Labor</td>
+                        <th width="100">Type of Delivery</td>
+                        <th width="100">Complications Mother and or infant</td>
+                        <th width="100">Sex</td>
+                        
+                        <th width="100">Birth weight</th>
+                            <th width="100">Present Health</th>
+                        
+                                        
+                    </tr>
+                </thead>
+                <tbody>
+                
+                        <tr align= 'center' style = 'background-color:aliceblue'>
+                                <td width='100'><input type="date" name="1st-ob-hist" id=""></td>
+                                <td width='100'><input type="text" name="place-of-del" id=""></td>
+                                <td width='100'><input type="text" name="duration-preg" id=""></td>
+                                <td width='100'><input type="text" name="hrs-labour" id=""></td>
+                                <td width='100'><input type="text" name="type-delivery" id=""></td>
+                                <td width='100'><input type="text" name="complications" id=""></td>
+                                <td width='100'><input type="text" name="sex" id=""></td>
+                                <td width='100'><input type="number" name="birth-weight" id=""></td>
+                                <td width='100'><input type="text" name="present-health" id=""></td>
+                                
+                        </tr>
+                        
+                    <tr align= 'center' style = 'background-color:aliceblue'>
+                        <td width='100'><input type="date" name="2nd-ob-hist" id=""></td>
+                        <td width='100'><input type="text" name="place-of-del-2" id=""></td>
+                                <td width='100'><input type="text" name="duration-preg-2" id=""></td>
+                                <td width='100'><input type="text" name="hrs-labour-2" id=""></td>
+                                <td width='100'><input type="text" name="type-delivery-2" id=""></td>
+                                <td width='100'><input type="text" name="complications-2" id=""></td>
+                                <td width='100'><input type="text" name="sex-2" id=""></td>
+                                <td width='100'><input type="number" name="birth-weight-2" id=""></td>
+                                <td width='100'><input type="text" name="present-health-2" id=""></td>
+                                
+                </tr>
+                <!--  -->
+            <tr align= 'center' style = 'background-color:aliceblue'>
+                <td width='100'><input type="date" name="3rd-ob-hist" id=""></td>
+                <td width='100'><input type="text" name="place-of-del-3" id=""></td>
+                                <td width='100'><input type="text" name="duration-preg-3" id=""></td>
+                                <td width='100'><input type="text" name="hrs-labour-3" id=""></td>
+                                <td width='100'><input type="text" name="type-delivery-3" id=""></td>
+                                <td width='100'><input type="text" name="complications-3" id=""></td>
+                                <td width='100'><input type="text" name="sex-3" id=""></td>
+                                <td width='100'><input type="number" name="birth-weight-3" id=""></td>
+                                <td width='100'><input type="text" name="present-health-3" id=""></td>
+                             
+        </tr>
+        <tr align= 'center' style = 'background-color:aliceblue'>
+            <td width='100'><input type="date" name="4-ob-hist" id=""></td>
+            <td width='100'><input type="text" name="place-of-del-4" id=""></td>
+            <td width='100'><input type="text" name="duration-preg-4" id=""></td>
+            <td width='100'><input type="text" name="hrs-labour-4" id=""></td>
+            <td width='100'><input type="text" name="type-delivery-4" id=""></td>
+            <td width='100'><input type="text" name="complications-4" id=""></td>
+            <td width='100'><input type="text" name="sex-4" id=""></td>
+            <td width='100'><input type="number" name="birth-weight-4" id=""></td>
+            <td width='100'><input type="text" name="present-health-4" id=""></td>
+                    </tr>
+                        <tr align= 'center' style = 'background-color:aliceblue'>
+                            <td width='100'><input type="date" name="5-ob-hist" id=""></td>
+                            <td width='100'><input type="text" name="place-of-del-5" id=""></td>
+                                <td width='100'><input type="text" name="duration-preg-5" id=""></td>
+                                <td width='100'><input type="text" name="hrs-labour-5" id=""></td>
+                                <td width='100'><input type="text" name="type-delivery-5" id=""></td>
+                                <td width='100'><input type="text" name="complications-5" id=""></td>
+                                <td width='100'><input type="text" name="sex-5" id=""></td>
+                                <td width='100'><input type="number" name="birth-weight-5" id=""></td>
+                                <td width='100'><input type="text" name="present-health-5" id=""></td>
+                                              </tr>
+
+                    <!-- <tr align= 'center' style = 'background-color:aliceblue'>
+                        <td width='100'><input type="date" name="2nd-ob-hist" id=""></td>
+                        <td width='100'><input type="text" name="sex" id=""></td>
+                        <td width='100'><input type="text" name="sex" id=""></td>
+                        <td width='100'><input type="text" name="sex" id=""></td>
+                        <td width='100'><input type="text" name="sex" id=""></td>
+                        <td width='100'><input type="text" name="sex" id=""></td>
+                        <td width='100'><input type="text" name="sex" id=""></td>
+                        <td width='100'><input type="text" name="sex" id=""></td>
+                        <td width='100'><input type="text" name="sex" id=""></td>
+                </tr> -->
+            
+              
+                
+                </tbody>
+            
+            </table>
+
+            <hr>
+            <h2>D</h2> <h2>BIRTH CONTROL HISTORY</h2>
+            <p>What birth control method(s) do you currently use? <input type="text" name="birth-control" id="birth-control"></p>
+            <hr>
+            <h2>E</h2> <h2>SEXUAL HISTORY</h2>
+            <p>Do you have a sexual partner? <label for="sex-partner">No</label><input type="checkbox" name="sex-partner" id="sex-partner-no"> <label for="sex-partner">Yes</label><input type="checkbox" name="sex-partner" id="sex-partner-yes"></p> <p>(Male <input type="checkbox" name="sex-partner-male" id="male"> Female <input type="checkbox" name="sex-partner-male" id="sex-partner-female">)</p>
+            <p>Are there concerns about your sexual activity which you may want to discuss with your doctor?</p><br>
+            <label for="">Yes</label><input type="checkbox" name="sex-concerns" id=""> <label for=""></label>No<input type="checkbox" name="sex-concerns" id="">
+            <hr>
+            <h2>F</h2> <h2>PAST OBSTETRICAL/GYNECOLOGICAL SURGERIES</h2>
+            <p>Check any that apply: or <input type="checkbox" name="check-apply" id="check-apply"><label for="check-apply">None</label></p>
+            <h2>SURGERY</h2>
+               <input type="checkbox" name="D&C" id="D&C"> <label for="D&C">D&C</label> <input type="date" name="D&C-date" id=""><br>
+               <input type="checkbox" name="Hysteroscopy" id="Hysteroscopy"> <label for="Hysteroscopy">Hysteroscopy</label><input type="date" name="Hysteroscopy-date" id=""><br>
+               <input type="checkbox" name="infertility-surgery" id="infertility-surgery"> <label for="infertility-surgery">infertility surgery</label><input type="date" name="infertility-surgery-date" id=""><br>
+               <input type="checkbox" name="tuboplasty" id="tuboplasty"> <label for="tuboplasty">tuboplasty</label><input type="date" name="tuboplasty-date" id=""><br>
+               <input type="checkbox" name="tubal-ligation" id="tubal-ligation"> <label for="tubal-ligation">tubal ligation</label><input type="date" name="tubal-ligation-date" id=""><br>
+               <input type="checkbox" name="laparoscopy" id="laparoscopy"> <label for="laparoscopy">laparoscopy</label><input type="date" name="" id=""><br>
+               <input type="checkbox" name="hysterectomy-(vaginal)" id="hysterectomy-(vaginal)"> <label for="hysterectomy-(vaginal)">hysterectomy (vaginal)</label><input type="date" name="hysterectomy-(vaginal)-date" id=""><br>
+               <input type="checkbox" name="hysterectomy-(abdominal)" id="hysterectomy-(abdominal)"> <label for="hysterectomy-(abdominal)">hysterectomy (abdominal)</label><input type="date" name="hysterectomy-(abdominal)-date" id=""><br>
+               <input type="checkbox" name="myomectomy" id="myomectomy"> <label for="myomectomy">myomectomy</label><input type="date" name="myomectomy-date" id=""><br>
+               <input type="checkbox" name="ovarian" id="ovarian"> <label for="ovarian">ovarian surgery</label><input type="date" name="ovarian-date" id=""><br>
+               <input type="checkbox" name="L-cyst(s)" id="L-cyst(s)"> <label for="L-cyst(s)">L cyst(s) removed ovarian</label><input type="date" name="L-cyst(s)-date" id=""><br>
+               <input type="checkbox" name="R-cyst(s)" id="R-cyst(s)"> <label for="R-cyst(s)">R cyst(s) removed ovarian</label><input type="date" name="" id=""><br>
+               <input type="checkbox" name="L-ovary" id="L-ovary"> <label for="L-ovary">L ovary removed</label><input type="date" name="L-ovary-date" id=""><br>
+               <input type="checkbox" name="R-ovary" id="R-ovary"> <label for="R-ovary">R ovary removed</label><input type="date" name="R-ovary-date" id=""><br>
+               <input type="checkbox" name="vaginal-or-bladder-repair" id="vaginal-or-bladder-repair"> <label for="vaginal-or-bladder-repair">vaginal or bladder repair for prolapsed or incontinence</label><input type="date" name="vaginal-or-bladder-repair-date" id=""><br>
+               <input type="checkbox" name="cesarean" id="cesarean"> <label for="cesarean">cesarean section</label><input type="date" name="cesarean-date" id=""><br>
+                <label for="other-(specify)">other (specify)</label><input type="text" name="other-(specify)" id="other-(specify)"><input type="date" name="other-(specify)-date" id=""><br>
+               
+            <hr>
+            <h2>G</h2> <h2>PAST SURGICAL HISTORY(Not OB/GYN)</h2>
+               <p>List all surgeries and their year or 
+                <br><input type="checkbox" name="surgeries-no" id="surgeries-no"><label for="surgeries-no">None</label></p>
+
+                <table border="1" style = "background-color:black">
+                    <thead>
+                        <tr align= "center" style = "background-color:lightblue">
+                            
+                            <th width="100">Surgeries</td>
+                                <th width="100">Year</td>             
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                            <tr align= 'center' style = 'background-color:aliceblue'>
+                                    <td width='100'><input type="text" name="surg-1" id=""></td>
+                                    <td width='100'><input type="date" name="surg-1-date" id=""></td>
+                                    
+                            </tr>
+                            <tr align= 'center' style = 'background-color:aliceblue'>
+                                
+                                <td width='100'><input type="text" name="surg-2" id=""></td>
+                                <td width='100'><input type="date" name="surg-2-date" id=""></td>
+                                
+                        </tr>
+
+                        <tr align= 'center' style = 'background-color:aliceblue'>
+                            <td width='100'><input type="text" name="surg-3" id=""></td>
+                            <td width='100'><input type="date" name="surg-3-date" id=""></td>
+                            
+                    </tr>
+                    <tr align= 'center' style = 'background-color:aliceblue'>
+                        
+                        <td width='100'><input type="text" name="surg-4" id=""></td>
+                        <td width='100'><input type="date" name="surg-4-date" id=""></td>
+                        
+                </tr>
+                    </tbody>
+                
+                </table>
+
+            <hr>
+            <h2>H</h2><h2>PAP SMEAR/MAMMOGRAM HISTORY</h2>
+            <input type="checkbox" name="date-of-pap-check" id="date-of-pap"><label for="date-of-pap">Date of pap smear</label><input type="date" name="date-of-pap"> <br>
+            <input type="checkbox" name="abnormal-pap-smears-check" id="abnormal-pap-smears"><label for="abnormal-pap-smears">Have you had abnormal pap smears?</label><label for="abnormal-pap-smears">No</label><input type="checkbox" name="abnormal-pap-smears" id="sex-partner-no" value="yes"> <label for="sex-partner-yes">Yes</label><input type="checkbox" name="abnormal-pap-smears" id="sex-partner-yes" value="yes"><br>
+            <p>If yes, what type(s) of treatment have you had?</p>
+            <ol>
+                <li>cryotherapy <input type="date" name="cryotherapy" id=""></li>
+                <li> laser <input type="date" name="laser" id=""></li>
+                <li>cone biopsy <input type="date" name="cone-biopsy" id=""></li>
+                <li>loop excision (LEEP) <input type="date" name="loop-excision" id=""></li>
+            </ol>
+            <label for="">Date of last mammogram</label><input type="date" name="last-mammogram" id="">
+           <p>Have you had an abnormal mammogram?</p><label for="ab-mamo-no">No</label><input type="checkbox" name="ab-mamo-no" id="" value="no"> <label for="ab-mamo-no">Yes</label><input type="checkbox" name="ab-mamo-no" id="" value="yes">
+            <h2>OTHER PAST GYNECOLOGICAL HISTORY</h2>
+            <P>Check any that apply:</P>
+            <ol>
+                <li><input type="checkbox" name="gyn-hist-None" id=""><label for="">None</label></li>
+                <li><input type="checkbox" name="gyn-hist-Venereal" id=""><label for="">Venereal warts</label></li>
+                <li><input type="checkbox" name="gyn-hist-Herpes" id=""><label for="">Herpes genital</label></li>
+                <li><input type="checkbox" name="gyn-hist-Syphilis" id=""><label for="">Syphilis</label></li>
+                <li><input type="checkbox" name="gyn-hist-Pelvic" id=""><label for="">Pelvic inflammatory disease</label></li>
+                <li><input type="checkbox" name="gyn-hist-Endometriosis" id=""><label for="">Endometriosis</label></li>
+                <li><input type="checkbox" name="gyn-hist-Chlamydia" id=""><label for="">Chlamydia</label></li>
+                <li><input type="checkbox" name="gyn-hist-Gonorrhea" id=""><label for="">Gonorrhea</label></li>
+                <li><input type="checkbox" name="gyn-hist-Vaginal" id=""><label for="">Vaginal infections</label></li>
+                <li><label for="">Other</label> <input type="text" name="gyn-other" id=""></li>
+                               
+            </ol>
+
+            <hr>
+            <h2>I</h2><h2>PAST MEDICAL HISTORY</h2>
+            <p>Check any that apply: or <input type="checkbox" name="past-med-hist" id=""> <label for="past-med-hist">None</label></p><br>
+            <input type="checkbox" name="" id=""><label for="">Arthritis</label>
+            <input type="checkbox" name="" id=""><label for="">Diabetes</label>
+            <input type="checkbox" name="" id=""><label for="">Diet controlled</label>
+            <input type="checkbox" name="" id=""><label for="">Pill controlled</label>
+            <input type="checkbox" name="" id=""><label for="">Insulin controlled </label>
+            <input type="checkbox" name="" id=""><label for="">High blood pressure</label>
+            <input type="checkbox" name="" id=""><label for="">Heart disease</label>
+            <input type="checkbox" name="" id=""><label for="">Kidney Disease</label>
+            <input type="checkbox" name="" id=""><label for="">Gallstones</label>
+            <input type="checkbox" name="" id=""><label for="">Liver Disease (including hepatitis)</label>
+            <input type="checkbox" name="" id=""><label for="">Epilepsy</label>
+            <input type="checkbox" name="" id=""><label for="">Blood Transfusions</label>
+            <input type="checkbox" name="" id=""><label for="">Thyroid disease</label>
+            <input type="checkbox" name="" id=""><label for="">Asthma</label>
+            <input type="checkbox" name="" id=""><label for="">Emphysema</label>
+            <input type="checkbox" name="" id=""><label for="">Bronchitis</label>
+            <input type="checkbox" name="" id=""><label for="">HIV+</label>
+            <input type="checkbox" name="" id=""><label for="">Eating Disorder</label>
+            <input type="checkbox" name="" id=""><label for="">Other</label><input type="text" name="" id="">
+
+            <hr>
+            <h2>J</h2><h2>CURRENT MEDICATIONS (Include dose (amount)per day)</h2>
+
+            <table border="1" style = "background-color:black">
+                <thead>
+                    <tr align= "center" style = "background-color:lightblue">
+                        <th width="100">Medication</td>
+                        <th width="100">Dose</td>
+                        <th width="100">Frequency</td>
+                        
+                        
+                                        
+                    </tr>
+                </thead>
+                <tbody>
+                
+                        <tr align= 'center' style = 'background-color:aliceblue'>
+                                <td width='100'><input type="text" name="" id=""></td>
+                                <td width='100'><input type="text" name="" id=""></td>
+                                <td width='100'><input type="text" name="" id=""></td>
+                         </tr>
+                        <tr align= 'center' style = 'background-color:aliceblue'>
+                            <td width='100'><input type="text" name="" id=""></td>
+                            <td width='100'><input type="text" name="" id=""></td>
+                            <td width='100'><input type="text" name="" id=""></td>
+                         </tr>
+                    <tr align= 'center' style = 'background-color:aliceblue'>
+                        <td width='100'><input type="text" name="" id=""></td>
+                        <td width='100'><input type="text" name="" id=""></td>
+                        <td width='100'><input type="text" name="" id=""></td>
+                    </tr>
+                <tr align= 'center' style = 'background-color:aliceblue'>
+                    <td width='100'><input type="text" name="" id=""></td>
+                    <td width='100'><input type="text" name="" id=""></td>
+                    <td width='100'><input type="text" name="" id=""></td>
+                </tr>
+            <tr align= 'center' style = 'background-color:aliceblue'>
+                <td width='100'><input type="text" name="" id=""></td>
+                <td width='100'><input type="text" name="" id=""></td>
+                <td width='100'><input type="text" name="" id=""></td>
+            </tr>
+        
+                
+                </tbody>
+            
+            </table>
+            <hr>
+            <h2>K</h2><h2>DO YOU CURRENTLY?</h2>
+            <p>Smoke</p> <label for="smoke-no">No</label><input type="checkbox"> <label for="smoke-yes">Yes</label><input type="checkbox" name="smoke-yes" id=""> <input type="number" name="smoke-packs" id="" placeholder="packs per day">
+            <p>Use alcohol</p> <label for="alcohol-yes">Yes</label><input type="checkbox" name="alocohol-yes" id=""><label for="alcohol-yes">No</label><input type="checkbox" name="alocohol-no" id="">
+            <ol>
+                <p>If yes: </p>
+                    <input type="number" name="wine-glass" id="" placeholder="Glasses of wine">
+                    <input type="number" name="beer-bot" id="" placeholder=" beer :bottles/day">
+                    <input type="number" name="hard-liq" id="" placeholder="hard liquid (oz./day)">
+            </ol>
+            <br>
+            <p>Use illicit drugs </p>
+            <label for="">No</label><input type="checkbox" name="ill-drugs" id="" value="no"> <label for="">Yes</label><input type="checkbox" name="ill-drugs" value="yes" id="">
+            <input type="text" name="type-illicit" id="" placeholder="type"> <input type="number" name="amount-illicit" placeholder="amount" id="">
+            <br>
+            <p>Exercise:</p>
+            <ol>
+                <li><input type="text" name="exercise-type" id="" placeholder="Type"></li>
+                <li><input type="text" name="exercise-often" id="" placeholder="How often"></li>
+            </ol>
+            <hr>
+            <h2>L</h2><h2>DRUG ALLERGIES</h2>
+            <label for="">Yes</label><input type="checkbox" name="DRUG-ALLERGIES" id="" value="no">
+            <label for="">No</label><input type="checkbox" name="DRUG-ALLERGIES" id="" value="yes">
+            <br>
+            <p>List:</p>
+            <ol>
+                <li><input type="text" name="" id=""></li>
+                <li><input type="text" name="" id=""></li>
+                <li><input type="text" name="" id=""></li>
+                <li><input type="text" name="" id=""></li>
+                <li><input type="text" name="" id=""></li>
+            </ol>
+            <hr>
+            <h2>M</h2><h2>FAMILY HISTORY</h2>
+            <input type="checkbox" name="diabetes" id=""><label for="diabetes">Diabetes</label>
+            <input type="checkbox" name="heart-dis" id=""><label for="heart-dis">Heart Disease</label>
+            <input type="checkbox" name="breast-canc" id=""><label for="breast-canc">Breast Cancer</label>
+            <input type="checkbox" name="other" id=""><label for="other">Other</label>
+            <input type="checkbox" name="ovarian-canc" id=""><label for="ovarian-canc">Ovarian Cancer</label>
+            <input type="checkbox" name="endo-canc" id=""><label for="endo-canc">Endometrial Cancer</label>
+            <input type="checkbox" name="colon-canc" id=""><label for="colon-canc">Colon Cancer</label>
+            <p>If yes, to any, please list affected relatives</p>
+            <ol>
+                <li><input type="text" name="relative" id=""></li>
+                <li><input type="text" name="relative" id=""></li>
+                <li><input type="text" name="relative" id=""></li>
+            </ol>
+
+            <input type="checkbox" name="none-of-above" id=""><label for="none-of-above">None of the above</label>
+
+            <hr>
+            <h2>N</h2><h2>OTHER SYMPTOMS</h2>
+            <h3>Have you had recent?</h3>
+            <input type="checkbox" name="weight-loss" id=""><label for="weight-loss">weight loss</label>
+            <input type="checkbox" name="weight-gain" id=""><label for="weight-gain">weight gain</label>
+            <input type="checkbox" name="change-in-energy" id=""><label for="change-in-energy">change in energy</label>
+            <input type="checkbox" name="change-in-exercise-tolerance" id=""><label for="change-in-exercise-tolerance">change in exercise-tolerance</label>
+            <input type="checkbox" name="hair-growth" id=""><label for="hair-growth">hair growth</label>
+            <input type="checkbox" name="hair-loss" id=""><label for="hair-loss">hair loss</label>
+            <input type="checkbox" name="change-in-urinary-function" id=""><label for="change-in-urinary-function">change in urinary function</label>
+            <input type="checkbox" name="hot-flushes" id=""><label for="hot-flushes">hot flushes</label>
+            <input type="checkbox" name="breast-discharge" id=""><label for="breast-discharge">breast discharge</label>
+            <input type="checkbox" name="none-of-the-above" id=""><label for="none-of-the-above">none of the above</label>
+            <input type="checkbox" name="Other" id=""><label for="Other">Other</label>
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+
+           
+            <hr>
+            <h2>O</h2>
+            <h3>Note: Fill out Section "O" only if you are pregnant or planning to be pregnant in the near future.</h3>
+            <h3 style="color: red;">Have you or the baby's father or anyone in your families ever had any of the following:</h3>
+            <input type="checkbox" name="down-syndro" id=""><label for="down-syndro">Down Syndrome (Mongolism)? If yes, who?</label> <input type="text" name="down-syndro-input" id=""><br>
+            <input type="checkbox" name="down-syndro" id=""><label for="down-syndro">Other Chromosomal abnormality? If yes, specify</label> <input type="text" name="down-syndro-input" id=""><br>
+            <input type="checkbox" name="down-syndro" id=""><label for="down-syndro">Neural tube defect (spina bifida, anencephaly)? If yes, who?</label> <input type="text" name="down-syndro-input" id=""><br>
+            <input type="checkbox" name="down-syndro" id=""><label for="down-syndro">Hemophilia or other coagulation abnormality? If yes, who?</label> <input type="text" name="down-syndro-input" id=""><br>
+            <input type="checkbox" name="down-syndro" id=""><label for="down-syndro">Muscular Dystrophy? If yes, who?</label> <input type="text" name="down-syndro-input" id=""><br>
+            <input type="checkbox" name="down-syndro" id=""><label for="down-syndro">Cystic Fibrosis? If yes, who?</label> <input type="text" name="down-syndro-input" id=""><br>
+            <input type="checkbox" name="down-syndro" id=""><label for="down-syndro">If you or the baby's biological father are of Jewish ancestry, have either of you been screened for 
+                Tay-Sachs disease? </label> <input type="text" name="down-syndro-input" id=""><br>
+            <ol>
+                <li><input type="checkbox" name="Other" id=""><label for="Other">Father</label> <input type="text" name="result-father" id="" placeholder="Result"><br></li>
+                <li><input type="checkbox" name="Other" id=""><label for="Other">Mother</label> <input type="text" name="result-mother" id="" placeholder="Result"><br></li>
+            
+            </ol>
+
+            <input type="checkbox" name="down-syndro" id=""><label for="down-syndro">If you or the baby's biological father are of Jewish ancestry, have either of you been screened for 
+                Tay-Sachs disease? </label> <input type="text" name="down-syndro-input" id=""><br>
+            <ol>
+                <li><input type="checkbox" name="Other" id=""><label for="Other">Father</label> <input type="text" name="result-father" id="" placeholder="Result"><br></li>
+                <li><input type="checkbox" name="Other" id=""><label for="Other">Mother</label> <input type="text" name="result-mother" id="" placeholder="Result"><br></li>
+            
+            </ol>
+
+            <input type="checkbox" name="down-syndro" id=""><label for="down-syndro">If you or the baby's biological father are of African ancestry, have either of you been 
+                screened for Sickle cell trait? </label> <input type="text" name="down-syndro-input" id=""><br>
+            <ol>
+                <li><input type="checkbox" name="Other" id=""><label for="Other">Father</label> <input type="text" name="result-father" id="" placeholder="Result"><br></li>
+                <li><input type="checkbox" name="Other" id=""><label for="Other">Mother</label> <input type="text" name="result-mother" id="" placeholder="Result"><br></li>
+            
+            </ol>
+
+            <input type="checkbox" name="down-syndro" id=""><label for="down-syndro">If you or the baby's biological father are of Italian, Greek, or Mediterranean background, 
+                have either of you been tested for B-thalessemia? </label> <input type="text" name="down-syndro-input" id=""><br>
+            <ol>
+                <li><input type="checkbox" name="Other" id=""><label for="Other">Father</label> <input type="text" name="result-father" id="" placeholder="Result"><br></li>
+                <li><input type="checkbox" name="Other" id=""><label for="Other">Mother</label> <input type="text" name="result-mother" id="" placeholder="Result"><br></li>
+            
+            </ol>
+
+            <input type="checkbox" name="down-syndro" id=""><label for="down-syndro">If you or the baby's biological father are of Philippine or Southeast Asian ancestry, have 
+                either of you been tested for A-thalessemia? </label> <input type="text" name="down-syndro-input" id=""><br>
+            <ol>
+                <li><input type="checkbox" name="Other" id=""><label for="Other">Father</label> <input type="text" name="result-father" id="" placeholder="Result"><br></li>
+                <li><input type="checkbox" name="Other" id=""><label for="Other">Mother</label> <input type="text" name="result-mother" id="" placeholder="Result"><br></li>
+            
+            </ol>
+
+            
+           
+
+
+            
+        </div>
+    </form>
+</body>
+</html>
