@@ -148,33 +148,115 @@ $_POST["gyn-other"];
 ///////////////////////////////////////////////////I
 ///PAST MED HIST
 $_POST["past-med-hist"];//none
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
-$_POST[""];
+$_POST["Arthritis"];
+$_POST["Diabetes"];
+$_POST["Diet"];
+$_POST["Pill"];
+$_POST["Insulin"];
+$_POST["hbp"];
+$_POST["heart-disease"];
+$_POST["Kidney-disease"];
+$_POST["Gallstones"];
+$_POST["Liver"];
+$_POST["Epilepsy"];
+$_POST["Blood"];
+$_POST["Thyroid"];
+$_POST["Asthma"];
+$_POST["Emphysema"];
+$_POST["Bronchitis"];
+$_POST["HIV+"];
+$_POST["Eating-Disorder"];
+$_POST["Other"];
+$_POST["Other-input"];
+//J/////////////////////////////////////////////////////// J
+$_POST["Medication"];
+$_POST["Dose"];
+$_POST["Frequency"];
+$_POST["Medication1"];
+$_POST["Dose1"];
+$_POST["Frequency1"];
+$_POST["Medication2"];
+$_POST["Dose2"];
+$_POST["Frequency2"];
+$_POST["Medication3"];
+$_POST["Dose3"];
+$_POST["Frequency3"];
+$_POST["Medication4"];
+$_POST["Dose4"];
+$_POST["Frequency4"];
+////////////////////////////////////////////////////////k
+$_POST["smoke"];//no //yes
+$_POST["smoke-packs"]; //no.
+$_POST["alcohol"];//yes //no
+//if yes
+$_POST["wine-glass"];//no.
+$_POST["beer-bot"];//no.
+$_POST["hard-liq"];//no.
+//use illicit
+$_POST["ill-drugs"];//no //yes
+$_POST["type-illicit"];
+$_POST["amount-illicit"];
+//exercise
+$_POST["exercise-type"];
+$_POST["exercise-often"];
+//L //////////////////////////////L//////////////////////L//////L//L
+$_POST["DRUG-ALLERGIES"];//no //yes
+//list
+$_POST["DRUG-ALLERGIES-list"];
+$_POST["DRUG-ALLERGIES-list1"];
+$_POST["DRUG-ALLERGIES-list2"];
+$_POST["DRUG-ALLERGIES-list3"];
+$_POST["DRUG-ALLERGIES-list4"];
+//////////////////////////////////////////////////////////////////////M
+$_POST["diabetes"];
+$_POST["heart-dis"];
+$_POST["breast-canc"];
+$_POST["other"];
+$_POST["ovarian-canc"];
+$_POST["endo-canc"];
+$_POST["colon-canc"];
+//IF yes, list teh relatives
+$_POST["relative"];
+$_POST["relative1"];
+$_POST["relative2"];
+$_POST["none-of-above"]; //none of the above
+/////////////////////////////////////////////////////////////////N
+//have you had any recent?
+$_POST["weight-loss"];
+$_POST["weight-gain"];
+$_POST["change-in-energy"];
+$_POST["change-in-exercise-tolerance"];
+$_POST["hair-growth"];
+$_POST["hair-loss"];
+$_POST["change-in-urinary-function"];
+$_POST["hot-flushes"];
+$_POST["breast-discharge"];
+$_POST["none-of-the-above"];
+$_POST["Other"];
+
+///////////////////////////////////////////////////////O ////////////////////////// O  ////////////////// O
+//planning to be prego only
+$_POST["down-syndro"];
+$_POST["Chromosomal"];
+$_POST["Neural"];
+$_POST["Hemophilia"];
+$_POST["Dystrophy"];
+$_POST["Cystic"];
+$_POST["Tay-Sachs"];
+$_POST["Tay-Sachs-input"];
+$_POST["Other-father"];
+$_POST["result-father"];
+$_POST["Other-mother"];
+$_POST["result-mother"];
+$_POST["Tay-Sachs-child"];
+$_POST["Tay-Sachs-child-input"];
+$_POST["Other1"];
+$_POST["Other2"];
+$_POST["Other-father-child"];
+$_POST["Other-mother-child"];
+$_POST["Sickle-cell"];
+$_POST["Sickle-cell-input"];
+$_POST["Other-Sickle-cell-f"];
+$_POST["Other-Sickle-cell-result-father"];
+$_POST["Other-Sickle cell-m"];
+$_POST["Other-Sickle-cell-result-mother"];
