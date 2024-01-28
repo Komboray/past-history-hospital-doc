@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="past.css">
 </head>
 <body>
-   <form action="pastHistory.php" method="post">
+   <form action="pastHistory.php" method="post" class="body-box">
         <div >
-            <h2 class ="heading">Department</h2>
-            <h1 class ="heading">PATIENT HISTORY QUESTIONNAIRE</h1>
+            <h2 class ="head" style="color: blue;">Department</h2>
+            <h1 class ="head">PATIENT HISTORY QUESTIONNAIRE</h1>
             <hr>
             <h2>A</h2>
             <ol>
-                <li>Marital Status: <input type="checkbox" name="marital-status" id="" value="single"><label for="single">single</label> <input type="checkbox" name="marital-status" id="" value="married"><label for="married">married</label> <input type="checkbox" name="marital-status" id="" value="long-term-relationship"> <label for="long-term-relationship">long-term-relationship</label><input type="checkbox" name="marital-status" id="" value="divorced"> <label for="">Divorced</label><input type="checkbox" name="marital-status" id="" value="widowed"><label for="">Widowed</label></li>
+                <li>Marital Status:<br> <input type="checkbox" name="marital-status" id="" value="single"><label for="single">single</label> <br><input type="checkbox" name="marital-status" id="" value="married"><label for="married">married</label><br> <input type="checkbox" name="marital-status" id="" value="long-term-relationship"> <label for="long-term-relationship">long-term-relationship</label><br><input type="checkbox" name="marital-status" id="" value="divorced"> <label for="">Divorced</label><br><input type="checkbox" name="marital-status" id="" value="widowed"><label for="">Widowed</label><br></li>
                 <li>Reasons for the visit: <input type="text" name="reason-for-visit" id=""></li>
                 <li>Refering Physician: <select name="ref-physician" id="">
                     <option value="Dr.Schola">Dr.Schola</option>
@@ -245,25 +245,25 @@
             <hr>
             <h2>I</h2><h2>PAST MEDICAL HISTORY</h2>
             <p>Check any that apply: or <input type="checkbox" name="past-med-hist" id=""> <label for="past-med-hist">None</label></p><br>
-            <input type="checkbox" name="Arthritis" id=""><label for="">Arthritis</label>
-            <input type="checkbox" name="Diabetes" id=""><label for="">Diabetes</label>
-            <input type="checkbox" name="Diet" id=""><label for="">Diet controlled</label>
-            <input type="checkbox" name="Pill" id=""><label for="">Pill controlled</label>
-            <input type="checkbox" name="Insulin" id=""><label for="">Insulin controlled </label>
-            <input type="checkbox" name="hbp" id=""><label for="">High blood pressure</label>
-            <input type="checkbox" name="heart-disease" id=""><label for="">Heart disease</label>
-            <input type="checkbox" name="Kidney-disease" id=""><label for="">Kidney Disease</label>
-            <input type="checkbox" name="Gallstones" id=""><label for="">Gallstones</label>
-            <input type="checkbox" name="Liver" id=""><label for="">Liver Disease (including hepatitis)</label>
-            <input type="checkbox" name="Epilepsy" id=""><label for="">Epilepsy</label>
-            <input type="checkbox" name="Blood" id=""><label for="">Blood Transfusions</label>
-            <input type="checkbox" name="Thyroid" id=""><label for="">Thyroid disease</label>
-            <input type="checkbox" name="Asthma" id=""><label for="">Asthma</label>
-            <input type="checkbox" name="Emphysema" id=""><label for="">Emphysema</label>
-            <input type="checkbox" name="Bronchitis" id=""><label for="">Bronchitis</label>
-            <input type="checkbox" name="HIV+" id=""><label for="">HIV+</label>
-            <input type="checkbox" name="Eating-Disorder" id=""><label for="">Eating Disorder</label>
-            <input type="checkbox" name="Other" id=""><label for="">Other</label><input type="text" name="Other-input" id="">
+            <input type="checkbox" name="Arthritis" id=""><label for="">Arthritis</label><br>
+            <input type="checkbox" name="Diabetes" id=""><label for="">Diabetes</label><br>
+            <input type="checkbox" name="Diet" id=""><label for="">Diet controlled</label><br>
+            <input type="checkbox" name="Pill" id=""><label for="">Pill controlled</label><br>
+            <input type="checkbox" name="Insulin" id=""><label for="">Insulin controlled </label><br>
+            <input type="checkbox" name="hbp" id=""><label for="">High blood pressure</label><br>
+            <input type="checkbox" name="heart-disease" id=""><label for="">Heart disease</label><br>
+            <input type="checkbox" name="Kidney-disease" id=""><label for="">Kidney Disease</label><br>
+            <input type="checkbox" name="Gallstones" id=""><label for="">Gallstones</label><br>
+            <input type="checkbox" name="Liver" id=""><label for="">Liver Disease (including hepatitis)</label><br>
+            <input type="checkbox" name="Epilepsy" id=""><label for="">Epilepsy</label><br>
+            <input type="checkbox" name="Blood" id=""><label for="">Blood Transfusions</label><br>
+            <input type="checkbox" name="Thyroid" id=""><label for="">Thyroid disease</label><br>
+            <input type="checkbox" name="Asthma" id=""><label for="">Asthma</label><br>
+            <input type="checkbox" name="Emphysema" id=""><label for="">Emphysema</label><br>
+            <input type="checkbox" name="Bronchitis" id=""><label for="">Bronchitis</label><br>
+            <input type="checkbox" name="HIV+" id=""><label for="">HIV+</label><br>
+            <input type="checkbox" name="Eating-Disorder" id=""><label for="">Eating Disorder</label><br>
+            <input type="checkbox" name="Other7" id=""><label for="">Other</label><input type="text" name="Other7-input" id="">
 
             <hr>
             <h2>J</h2><h2>CURRENT MEDICATIONS (Include dose (amount)per day)</h2>
@@ -346,13 +346,13 @@
             </ol>
             <hr>
             <h2>M</h2><h2>FAMILY HISTORY</h2>
-            <input type="checkbox" name="diabetes" id=""><label for="diabetes">Diabetes</label>
-            <input type="checkbox" name="heart-dis" id=""><label for="heart-dis">Heart Disease</label>
-            <input type="checkbox" name="breast-canc" id=""><label for="breast-canc">Breast Cancer</label>
-            <input type="checkbox" name="other" id=""><label for="other">Other</label>
-            <input type="checkbox" name="ovarian-canc" id=""><label for="ovarian-canc">Ovarian Cancer</label>
-            <input type="checkbox" name="endo-canc" id=""><label for="endo-canc">Endometrial Cancer</label>
-            <input type="checkbox" name="colon-canc" id=""><label for="colon-canc">Colon Cancer</label>
+            <input type="checkbox" name="diabetes" id=""><label for="diabetes">Diabetes</label><br>
+            <input type="checkbox" name="heart-dis" id=""><label for="heart-dis">Heart Disease</label><br>
+            <input type="checkbox" name="breast-canc" id=""><label for="breast-canc">Breast Cancer</label><br>
+            <input type="checkbox" name="other5" id=""><label for="other5">Other</label><br>
+            <input type="checkbox" name="ovarian-canc" id=""><label for="ovarian-canc">Ovarian Cancer</label><br>
+            <input type="checkbox" name="endo-canc" id=""><label for="endo-canc">Endometrial Cancer</label><br>
+            <input type="checkbox" name="colon-canc" id=""><label for="colon-canc">Colon Cancer</label><br>
             <p>If yes, to any, please list affected relatives</p>
             <ol>
                 <li><input type="text" name="relative" id=""></li>
@@ -365,17 +365,17 @@
             <hr>
             <h2>N</h2><h2>OTHER SYMPTOMS</h2>
             <h3>Have you had recent?</h3>
-            <input type="checkbox" name="weight-loss" id=""><label for="weight-loss">weight loss</label>
-            <input type="checkbox" name="weight-gain" id=""><label for="weight-gain">weight gain</label>
-            <input type="checkbox" name="change-in-energy" id=""><label for="change-in-energy">change in energy</label>
-            <input type="checkbox" name="change-in-exercise-tolerance" id=""><label for="change-in-exercise-tolerance">change in exercise-tolerance</label>
-            <input type="checkbox" name="hair-growth" id=""><label for="hair-growth">hair growth</label>
-            <input type="checkbox" name="hair-loss" id=""><label for="hair-loss">hair loss</label>
-            <input type="checkbox" name="change-in-urinary-function" id=""><label for="change-in-urinary-function">change in urinary function</label>
-            <input type="checkbox" name="hot-flushes" id=""><label for="hot-flushes">hot flushes</label>
-            <input type="checkbox" name="breast-discharge" id=""><label for="breast-discharge">breast discharge</label>
-            <input type="checkbox" name="none-of-the-above" id=""><label for="none-of-the-above">none of the above</label>
-            <input type="checkbox" name="Other" id=""><label for="Other">Other</label>
+            <input type="checkbox" name="weight-loss" id=""><label for="weight-loss">weight loss</label><br>
+            <input type="checkbox" name="weight-gain" id=""><label for="weight-gain">weight gain</label><br>
+            <input type="checkbox" name="change-in-energy" id=""><label for="change-in-energy">change in energy</label><br>
+            <input type="checkbox" name="change-in-exercise-tolerance" id=""><label for="change-in-exercise-tolerance">change in exercise-tolerance</label><br>
+            <input type="checkbox" name="hair-growth" id=""><label for="hair-growth">hair growth</label><br>
+            <input type="checkbox" name="hair-loss" id=""><label for="hair-loss">hair loss</label><br>
+            <input type="checkbox" name="change-in-urinary-function" id=""><label for="change-in-urinary-function">change in urinary function</label><br>
+            <input type="checkbox" name="hot-flushes" id=""><label for="hot-flushes">hot flushes</label><br>
+            <input type="checkbox" name="breast-discharge" id=""><label for="breast-discharge">breast discharge</label><br>
+            <input type="checkbox" name="none-of-the-above" id=""><label for="none-of-the-above">none of the above</label><br>
+            <input type="checkbox" name="Other6" id=""><label for="Other6">Other</label><br>
             
 
            
@@ -430,7 +430,7 @@
             </ol> -->
 
             
-           <input type="submit-pastHistory" value="Subit the past history">
+           <input type="submit-pastHistory" name="pastHistoryBtn" value="Subit the past history">
 
 
             
